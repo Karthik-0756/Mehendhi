@@ -176,12 +176,12 @@ const MehndiLandingPage = () => {
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
                             <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjxzdSQmnD0_bQscs_2x-FboOqi0_EPBfzXQ&s"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvSVUuLUO_y-cW2EYMDMkrL9kATlImzKCIQ&s"
                                 alt="Bridal Mehndi"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
-                        <h3 className="font-bold text-lg hover:underline">Baby Shower</h3>
+                        <h3 className="font-bold text-lg hover:underline"> Flower Designs</h3>
 
                         {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
@@ -192,12 +192,12 @@ const MehndiLandingPage = () => {
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
                             <img
-                                src="https://cdn0.weddingwire.in/vendor/8269/3_2/960/png/mehendi-artist-pooja-gada-designs-6-copy_15_268269-158392716442640.jpeg"
+                                src="https://i.pinimg.com/736x/a0/28/96/a0289614942ef69a6042c0de5b1cf9e1.jpg"
                                 alt="Tattoo Mehndi"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
-                        <h3 className="font-bold text-lg hover:underline">Puja Functions</h3>
+                        <h3 className="font-bold text-lg hover:underline">Mahendhi Tattos</h3>
 
                         {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
@@ -206,12 +206,12 @@ const MehndiLandingPage = () => {
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
                             <img
-                                src="https://cdn0.weddingwire.in/vendor/1933/3_2/960/png/mehndi-design-pooja-mehndi-art-mehndi-design-2_15_311933-159099302341210.jpeg"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolHeTBsUcnzmspD4GOBsei4LMka2KdO9JgA&s"
                                 alt="Tattoo Mehndi"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
-                        <h3 className="font-bold text-lg hover:underline">Festivel Mehndi</h3>
+                        <h3 className="font-bold text-lg hover:underline">Mandala designs</h3>
 
                         {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
@@ -367,10 +367,7 @@ const MehndiLandingPage = () => {
                                 <img className='w-10 h-10' src={location} alt="" />
                             </div>
                             <p className="text-gray-600 leading-relaxed text-sm">
-                                Palm Court Bldg M, 501/B, 5th Floor,
-                                New Link Road, Beside Goregaon
-                                Sports Complex, Malad West,
-                                Mumbai, Maharashtra 400064
+                                NO:27/44 THIRUVALLUVAR STREET NEHRU NAGAR VELACHERY CHENNAI-600042
                             </p>
                         </div>
 
@@ -448,7 +445,7 @@ const MehndiLandingPage = () => {
                 <div className='mx-40 flex justify-between'>
                     <div className='w-80 text-start items-center '>
                         <h2 className='font-bold mb-2 '>CONTACT</h2>
-                        <p className='mb-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, magni similique. Dignissimos nesciunt quasi, assumenda libero obcaecati eos saepe animi.</p>
+                        <p className='mb-2'>NO:27/44 THIRUVALLUVAR STREET NEHRU NAGAR VELACHERY CHENNAI-600042</p>
                         <p className='mb-2'>+91 82488 97608</p>
                         <p>henna_by_komz@mehndidesign.com</p>
                     </div>

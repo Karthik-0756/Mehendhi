@@ -120,7 +120,7 @@ const Gallery = () => {
                     <div className='mx-40 flex justify-between'>
                         <div className='w-80 text-start items-center '>
                             <h2 className='font-bold mb-2 '>CONTACT</h2>
-                            <p className='mb-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, magni similique. Dignissimos nesciunt quasi, assumenda libero obcaecati eos saepe animi.</p>
+                            <p className='mb-2'>NO:27/44 THIRUVALLUVAR STREET NEHRU NAGAR VELACHERY CHENNAI-600042</p>
                             <p className='mb-2'>+91 82488 97608</p>
                             <p>henna_by_komz@mehndidesign.com</p>
                         </div>
