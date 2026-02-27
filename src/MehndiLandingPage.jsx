@@ -21,7 +21,7 @@ import twitter from "./assets/twitter.png"
 import twitter1 from "./assets/twitter (1).png"
 import linkdln from "./assets/linkedin.png"
 import { useNavigate } from 'react-router-dom'
-
+import { img1, img2, img3, img4, img5, img6 } from './CategoryImages'
 
 
 
@@ -144,32 +144,32 @@ const MehndiLandingPage = () => {
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
                             <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvyp2gKiPjF9XxzxW_ih5fOZyMbh58-P8TGA&s"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXNLT4TScR6L_4hFF3nMUyLGU0y0LtWpVrw&s"
                                 alt="Henna Body Art"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
-                        <h3 className="font-bold text-lg hover:underline">Engagement</h3>
+                        <h3 className="font-bold text-lg hover:underline">Mehandhi palm</h3>
 
-                        <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
+                        {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
-                        </button>
+                        </button> */}
                     </div>
 
                     {/* Card 2 */}
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
                             <img
-                                src="https://ajayhenna.com/wp-content/uploads/2025/09/WhatsApp-Image-2025-09-23-at-13.54.34.jpeg"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCw4ylLIFHPv3EOSRhFpuoth2IRZq2zAVcw&s"
                                 alt="Dhamal Mehndi"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
-                        <h3 className="font-bold text-lg hover:underline">Bridal Mehndi</h3>
+                        <h3 className="font-bold text-lg hover:underline">Mehandhi arabic</h3>
 
-                        <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
+                        {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
-                        </button>
+                        </button> */}
                     </div>
 
                     {/* Card 3 */}
@@ -183,9 +183,9 @@ const MehndiLandingPage = () => {
                         </div>
                         <h3 className="font-bold text-lg hover:underline">Baby Shower</h3>
 
-                        <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
+                        {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
-                        </button>
+                        </button> */}
                     </div>
 
                     {/* Card 4 */}
@@ -199,9 +199,9 @@ const MehndiLandingPage = () => {
                         </div>
                         <h3 className="font-bold text-lg hover:underline">Puja Functions</h3>
 
-                        <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
+                        {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
-                        </button>
+                        </button> */}
                     </div>
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
@@ -213,9 +213,9 @@ const MehndiLandingPage = () => {
                         </div>
                         <h3 className="font-bold text-lg hover:underline">Festivel Mehndi</h3>
 
-                        <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
+                        {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
-                        </button>
+                        </button> */}
                     </div>
 
                 </div>
@@ -245,14 +245,12 @@ const MehndiLandingPage = () => {
                 <h2 className="text-3xl font-bold mb-10">Gallery</h2>
                 <div className="grid grid-cols-1  md:grid-cols-3  gap-4">
 
-                    <img className='w-100 mb-10 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl' src="https://instagram.fmaa2-1.fna.fbcdn.net/v/t51.82787-15/640411573_17927532804229082_3167508696653882969_n.webp?_nc_cat=101&ig_cache_key=MzgzOTY0Njk3MzE1OTUxOTUxOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=48dz5R2TRTQQ7kNvwFLk1wn&_nc_oc=AdmYhzmGxChUe6EfgaSHy7GIz08vPlsLg_S9S-SfsfW9qaZ2MITSmaO2d_hC5Oe4Brr3AOCKq_0ituqoV-vnJMxb&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmaa2-1.fna&_nc_gid=iCObt-9NH6hHKqiRm68Igg&oh=00_AftX1k7OuczkiWdUOnsN_lBgwgI3mcqQic4nRjHnCCOc_Q&oe=69A6EDC2" alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src="https://instagram.fmaa2-1.fna.fbcdn.net/v/t51.82787-15/639691878_17927223114229082_2602922408999399786_n.webp?_nc_cat=102&ig_cache_key=MzgzNzgzMzMyNDcxMTMxMzczOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=zFCcWgwHonoQ7kNvwHr008M&_nc_oc=AdkVbQoJ_Ecs3-RnOaYbpwUSxvalEwyjbRDiiDEsCrTPsKvjR2-hZMp_dDL_MI8moe5B4uGS7k6XDNsTadEEIVZ1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmaa2-1.fna&_nc_gid=iCObt-9NH6hHKqiRm68Igg&oh=00_Afs6cEKAhh-hR9C9FECYuly-NafaGl_HqivRqVYbMuoFpQ&oe=69A6C2DB" alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl' src="https://instagram.fmaa2-3.fna.fbcdn.net/v/t51.82787-15/573256501_17914410144229082_3403051223649122289_n.webp?_nc_cat=100&ig_cache_key=Mzc1NjIzNDIxMDY0MzUyNjc5Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=VXRjyGYfpgwQ7kNvwFqSXS0&_nc_oc=AdkYAxdcUCoB5p6sAbzxRSWydA3RxBI-Ph_KmFB9u7Xa1XKOmFmw9tKTL4uZmJS4-qnKkg7HynyHOekjs4JRr4S6&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmaa2-3.fna&_nc_gid=iCObt-9NH6hHKqiRm68Igg&oh=00_Afttemfnc3jPgVLNsDaoIq46l6wGG000gLSzhI6OuNhhIg&oe=69A6E09F" alt="" />
-
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl' src="https://instagram.fmaa2-1.fna.fbcdn.net/v/t51.75761-15/482091628_17885387814229082_1167938445191371447_n.webp?_nc_cat=101&ig_cache_key=MzU3NzIzODkwOTk4MzkzMzg0Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTgwMC5zZHIuQzMifQ%3D%3D&_nc_ohc=MZ23Z-kC6bQQ7kNvwEUZIMt&_nc_oc=Adnz11dnb6o7COoF_VFvBCE55KOKIu8wUlg7uczTUS816J35PlhA2rHfV6aLB_klqN-4ixdZtvVVSmtakUZBFvm1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmaa2-1.fna&_nc_gid=iCObt-9NH6hHKqiRm68Igg&oh=00_AfsgnF5woigerUGAgSqYP2hcmPjjINqcgO1vhi97ZEQZuw&oe=69A6DE26" alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl' src="https://instagram.fmaa2-4.fna.fbcdn.net/v/t51.75761-15/475445695_17881535757229082_7125963978320695579_n.webp?_nc_cat=110&ig_cache_key=MzU1NDgwODgyNjYxNDc5MDI5MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=ooSUgaNE1tkQ7kNvwFjTQ34&_nc_oc=Adm9uXM5mdkUfWgO4Z7LRWnvkbJ1f8yzsg6tDiPJdS79iCcoSCTEIuFgtU4eHHIOZVuQc8TwTn09Zi48xyyr30FO&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmaa2-4.fna&_nc_gid=yw1Ih3a2rmxYjBQ_ZpeExg&oh=00_Afu3ENMW3YNQ3qyAfxTbkqIZEqDGkmKgqfj3ndbnJPHoFw&oe=69A6E113" alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl' src="https://instagram.fmaa2-2.fna.fbcdn.net/v/t51.82787-15/639988360_18565425637010647_3259227713264922150_n.webp?_nc_cat=108&ig_cache_key=MzQ1MDU0OTA4NDA5OTI3MDgwMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjg2NHgxMDgwLnNkci5DMyJ9&_nc_ohc=WpJ2JPQYT_cQ7kNvwEK7sCv&_nc_oc=Adn6HKjXVRPB1d6sH6JGldINfRBw1ujdK9JEciURzzmkBe8TvGbJKeJYdD4C8IZ6A6m86BJTRnGJjLZqSW63uM_a&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fmaa2-2.fna&_nc_gid=cZxKdCli07eC1xjG7YSV1A&oh=00_AfuZDsBk9h4hiMz5A0VfakXRkY1z3GtF2da4SH2ZwTFa6Q&oe=69A6C679" alt="" />
-
+                    <img className='w-100 mb-10 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl' src={img1} alt="" />
+                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img2} alt="" />
+                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img3} alt="" />
+                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img4} alt="" />
+                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img5} alt="" />
+                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img6} alt="" />
                 </div>
 
                 <button onClick={() => navigate("/gallery")} className='w-50 mt-5 h-15 rounded-2xl border border-pink-300 bg-white text-red-400  items-center hover:text-white hover:bg-red-400'>Load more...</button>
