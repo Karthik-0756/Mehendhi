@@ -144,7 +144,7 @@ const MehndiLandingPage = () => {
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
                             <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXNLT4TScR6L_4hFF3nMUyLGU0y0LtWpVrw&s"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCw4ylLIFHPv3EOSRhFpuoth2IRZq2zAVcw&s"
                                 alt="Henna Body Art"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
@@ -160,7 +160,7 @@ const MehndiLandingPage = () => {
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
                             <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCw4ylLIFHPv3EOSRhFpuoth2IRZq2zAVcw&s"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXNLT4TScR6L_4hFF3nMUyLGU0y0LtWpVrw&s"
                                 alt="Dhamal Mehndi"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
@@ -192,7 +192,7 @@ const MehndiLandingPage = () => {
                     <div className="space-y-4 group">
                         <div className="h-64 overflow-hidden rounded-full shadow-lg">
                             <img
-                                src="https://i.pinimg.com/736x/a0/28/96/a0289614942ef69a6042c0de5b1cf9e1.jpg"
+                                src="https://i.ytimg.com/vi/KR-Obe_YcHI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCTcX7GYzk-UICD8apV2zRqhzzKIA"
                                 alt="Tattoo Mehndi"
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
