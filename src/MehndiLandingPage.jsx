@@ -74,7 +74,7 @@ const MehndiLandingPage = () => {
         <div className="bg-white text-gray-800 font-serif ">
             {/* 1. TOP NAVBAR */}
             <header className="border-b border-gray-100">
-                <div className="bg-pink-50 py-2 text-xs flex justify-between md:px-6 px-0 lg:px-20 text-gray-600">
+                <div className="bg-pink-50 py-2 text-xs flex justify-between md:px-6 px-1 lg:px-20 text-gray-600">
                     <div className="flex flex-col md:flex-row md:gap-4 gap-1">
                         <span className="flex items-center gap-1 whitespace-nowrap"><Phone size={12} /> +91 82488 97608</span>
                         <span className="flex items-center gap-1"><Mail size={12} /> henna_by_komz@mehndidesign.com</span>
@@ -148,7 +148,7 @@ const MehndiLandingPage = () => {
 
                     {/* Card 1 */}
                     <div className="space-y-4 group">
-                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-45 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCw4ylLIFHPv3EOSRhFpuoth2IRZq2zAVcw&s"
                                 alt="Henna Body Art"
