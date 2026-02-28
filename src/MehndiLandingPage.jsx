@@ -99,16 +99,16 @@ const MehndiLandingPage = () => {
             </header>
 
             {/* 2. HERO SECTION */}
-            <section className="relative md:h-175 h-[80vh] md:w-full w-full">
+            <section className="relative md:h-175 h-[65vh] md:w-full w-full">
                 {/* Background Image with Pink Overlay */}
                 <div className="absolute inset-0">
                     <img
                         src={handimg}
                         alt="Background"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full md:object-cover object-contain"
                     />
                     {/* Pink overlay */}
-                    <div className="absolute inset-0 bg-pink-300 md:opacity-40 opacity-50"></div>
+                    <div className="absolute inset-0 bg-pink-300 md:opacity-40 opacity-60"></div>
                 </div>
 
                 {/* Content Wrapper */}
@@ -131,7 +131,7 @@ const MehndiLandingPage = () => {
 
                             <a href="#contact">
                                 <button className="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600 transition">
-                                    Contact Now
+                                    Enquiry Now
                                 </button>
                             </a>
 
