@@ -75,8 +75,8 @@ const MehndiLandingPage = () => {
             {/* 1. TOP NAVBAR */}
             <header className="border-b border-gray-100">
                 <div className="bg-pink-50 py-2 text-xs flex justify-between md:px-6 px-0 lg:px-20 text-gray-600">
-                    <div className="flex gap-4">
-                        <span className="flex items-center gap-1"><Phone size={12} /> +91 82488 97608</span>
+                    <div className="flex flex-col md:flex-row md:gap-4 gap-1">
+                        <span className="flex items-center gap-1 whitespace-nowrap"><Phone size={12} /> +91 82488 97608</span>
                         <span className="flex items-center gap-1"><Mail size={12} /> henna_by_komz@mehndidesign.com</span>
                     </div>
                     <div className="flex w-25  gap-3 flex-row">
@@ -99,7 +99,7 @@ const MehndiLandingPage = () => {
             </header>
 
             {/* 2. HERO SECTION */}
-            <section className="relative md:h-175 h-[80vh] md:w-full w-full">
+            <section className="relative md:h-175 h-[60vh] md:w-full w-full ">
                 {/* Background Image with Pink Overlay */}
                 <div className="absolute inset-0">
                     <img
