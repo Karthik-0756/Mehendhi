@@ -99,16 +99,16 @@ const MehndiLandingPage = () => {
             </header>
 
             {/* 2. HERO SECTION */}
-            <section className="relative md:h-175 h-[65vh] md:w-full w-full">
+            <section className="relative md:h-175 h-[80vh] md:w-full w-full">
                 {/* Background Image with Pink Overlay */}
                 <div className="absolute inset-0">
                     <img
                         src={handimg}
                         alt="Background"
-                        className="w-full h-full md:object-cover object-contain"
+                        className="w-full h-full object-cover "
                     />
                     {/* Pink overlay */}
-                    <div className="absolute inset-0 bg-pink-300 md:opacity-40 opacity-60"></div>
+                    <div className="absolute inset-0 bg-pink-300 md:opacity-40 opacity-50"></div>
                 </div>
 
                 {/* Content Wrapper */}
