@@ -473,7 +473,7 @@ const MehndiLandingPage = () => {
                     </div>
                     <div>
                         <h2 className='font-bold mb-2'>CONNECT</h2>
-                        <div className='w-40 h-40 flex flex-row gap-3  '>
+                        <div className='md:w-40 md:h-40 w-40 h-10 flex flex-row gap-3  '>
                             <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={facebook} alt="" /></a>
                             <a className='transition-transform duration-200 hover:-translate-y-1  ' href="https://www.instagram.com/henna_by_komz/"><img src={insta} alt="" /></a>
                             <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={linkdln} alt="" /></a>
