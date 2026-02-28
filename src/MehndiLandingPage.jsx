@@ -74,7 +74,7 @@ const MehndiLandingPage = () => {
         <div className="bg-white text-gray-800 font-serif ">
             {/* 1. TOP NAVBAR */}
             <header className="border-b border-gray-100">
-                <div className="bg-pink-50 py-2 text-xs flex justify-between md:px-6 px-2 lg:px-20 text-gray-600">
+                <div className="bg-pink-50 py-2 text-xs flex justify-between md:px-6 px-0 lg:px-20 text-gray-600">
                     <div className="flex gap-4">
                         <span className="flex items-center gap-1"><Phone size={12} /> +91 82488 97608</span>
                         <span className="flex items-center gap-1"><Mail size={12} /> henna_by_komz@mehndidesign.com</span>
@@ -99,7 +99,7 @@ const MehndiLandingPage = () => {
             </header>
 
             {/* 2. HERO SECTION */}
-            <section className="relative md:h-175 h-100 md:w-full w-120">
+            <section className="relative md:h-175 h-[80vh] md:w-full w-full">
                 {/* Background Image with Pink Overlay */}
                 <div className="absolute inset-0">
                     <img
@@ -118,14 +118,14 @@ const MehndiLandingPage = () => {
                     <div className="w-1/2 hidden md:block"></div>
 
                     {/* Right Content (slightly more right) */}
-                    <div className="w-full md:w-1/2 flex items-center justify-end pr-16">
+                    <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end px-4 md:pr-16">
                         <div className="text-center md:text-left space-y-5 max-w-lg">
 
                             <h2 className="text-pink-700 text-3xl italic">
                                 Mehndi Designs
                             </h2>
 
-                            <h1 className="text-5xl md:text-6xl font-bold text-gray-800">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800">
                                 To Make You Fall In Love
                             </h1>
 
@@ -144,7 +144,7 @@ const MehndiLandingPage = () => {
             {/* 3. CATEGORIES */}
             <section id='categories' className="py-20 px-6 lg:px-20 text-center">
                 <h2 className="text-3xl font-bold mb-12">Popular categories</h2>
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-8">
 
                     {/* Card 1 */}
                     <div className="space-y-4 group">
@@ -239,7 +239,7 @@ const MehndiLandingPage = () => {
                     </p>
                 </div>
                 <div className="rounded-3xl overflow-hidden shadow-xl">
-                    <img className='w-200 h-120 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5E5ly7ILwDPLX5UCxS4dd6n6-090JXqOc1w&s    " alt="Artist working" />
+                    <img className='md:w-200 md:h-120 w-full h-auto ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5E5ly7ILwDPLX5UCxS4dd6n6-090JXqOc1w&s    " alt="Artist working" />
                 </div>
             </section>
 
@@ -251,12 +251,12 @@ const MehndiLandingPage = () => {
                 <h2 className="text-3xl font-bold mb-10">Gallery</h2>
                 <div className="grid grid-cols-1  md:grid-cols-3  gap-4">
 
-                    <img className='w-100 mb-10 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl' src={img1} alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img2} alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img3} alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img4} alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img5} alt="" />
-                    <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img6} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl' src={img1} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img2} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl' src={img3} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img4} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img5} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img6} alt="" />
                 </div>
 
                 <button onClick={() => navigate("/gallery")} className='w-50 mt-5 h-15 rounded-2xl border  border-pink-300 bg-white text-red-400  items-center hover:text-white transition-colors duration-500  hover:bg-red-400'>Load more...</button>
@@ -367,7 +367,7 @@ const MehndiLandingPage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center relative">
 
                         {/* Address */}
-                        <div className="px-6 border-r-2 border-r-amber-100">
+                        <div className="px-6 md:border-r-2 md:border-r-amber-100">
                             <div className="flex justify-center mb-6">
                                 {/* <LocationIcon /> */}
                                 <img className='w-10 h-10' src={location} alt="" />
@@ -428,30 +428,33 @@ const MehndiLandingPage = () => {
 
 
                 <div className="grid md:grid-cols-2 gap-20">
-                    <div className="space-y-8">
-                        <div className="flex items-center gap-4">
+                    <div className="space-y-3 md:w-130 w-full mt-8">
+                        {/* <div className="flex items-center gap-4">
                             <div className="bg-pink-100 p-3 rounded-full text-pink-600"><MapPin size={24} /></div>
                             <div><h4 className="font-bold  text-pink-600 uppercase text-xs">Address</h4><p className='w-100'>NO:27/44 THIRUVALLUVAR STREET, NEHRU NAGAR, VELACHERY, CHENNAI-600042</p></div>
                         </div>
                         <div className="flex items-center gap-4">
                             <div className="bg-pink-100 p-3 rounded-full text-pink-600"><Phone size={24} /></div>
                             <div><h4 className="font-bold text-pink-600 uppercase text-xs">Call Us</h4><p>+91 82488 97608</p></div>
-                        </div>
+                        </div> */}
+                        <h1 className='text-4xl text-center font-bold'>Still Thinking?</h1>
+                        <h1 className='text-4xl text-center font-bold '>Contact us for a free consultation 👉</h1>
+                        <h1 className='text-xl text-center font-light '>Book a consultation and let us bring your mehndi dreams to life </h1>
                     </div>
                     <form className="space-y-4">
                         <div className="grid grid-cols-2 gap-4">
-                            <input name='Name' required onChange={handlechange} placeholder="Full Name" className="md:w-full w-50 p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
-                            <input name='Number' required onChange={handlechange} placeholder="Phone number" className="md:w-full w-50 p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
-                            <input name='Mail' required onChange={handlechange} placeholder="Email Address" className="md:w-160 w-110 p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                            <input name='Name' required onChange={handlechange} placeholder="Full Name" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                            <input name='Number' required onChange={handlechange} placeholder="Phone number" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                            <input name='Mail' required onChange={handlechange} placeholder="Email Address" className="md:w-160 w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
                         </div>
-                        <textarea required placeholder="Your Message" name='Msg' onChange={handlechange} rows="4" className="md:w-full w-110 p-3 border border-gray-200 rounded-lg focus:outline-pink-400"></textarea>
-                        <button onClick={WhatsApp} className="md:w-full w-40 bg-pink-500 text-white py-3 rounded-lg font-bold transition-colors duration-500 hover:bg-pink-600">Send Message</button>
+                        <textarea required placeholder="Your Message" name='Msg' onChange={handlechange} rows="4" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400"></textarea>
+                        <button onClick={WhatsApp} className="md:w-full w-full bg-pink-500 text-white py-3 rounded-lg font-bold transition-colors duration-500 hover:bg-pink-600">Send Message</button>
                     </form>
                 </div>
             </section>
                {/* footer info */}
             <section className="bg-gray-100 py-10  ">
-                <div className='md:mx-40 mx-2  flex justify-between '>
+                <div className="md:mx-40 mx-2 flex flex-col md:flex-row justify-between gap-6 md:gap-0">
                     <div className='md:w-80 w-40 text-start items-center '>
                         <h2 className='font-bold mb-2 '>CONTACT</h2>
                         <p className='mb-2'>NO:27/44 THIRUVALLUVAR STREET NEHRU NAGAR VELACHERY CHENNAI-600042</p>
