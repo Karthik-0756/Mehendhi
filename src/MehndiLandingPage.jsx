@@ -80,20 +80,20 @@ const MehndiLandingPage = () => {
                         <span className="flex items-center gap-1"><Mail size={12} /> henna_by_komz@mehndidesign.com</span>
                     </div>
                     <div className="flex w-25  gap-3 flex-row">
-                        <a href="https://www.instagram.com/henna_by_komz/"><img src={insta1} alt="" /></a>
-                        <a href=""><img src={facebook1} alt="" /></a>
-                        <a href=""><img src={twitter1} alt="" /></a>
+                        <a className='transition-transform duration-200 hover:-translate-y-1' href="https://www.instagram.com/henna_by_komz/"><img src={insta1} alt="" /></a>
+                        <a className='transition-transform duration-200 hover:-translate-y-1'href=""><img src={facebook1} alt="" /></a>
+                        <a className='transition-transform duration-200 hover:-translate-y-1'href=""><img src={twitter1} alt="" /></a>
                     </div>
                 </div>
                 <nav className="flex justify-between items-center md:py-4 py-2 px-6 lg:px-20 bg-white ">
                     <div className="md:text-2xl  font-bold text-pink-600 tracking-widest">HENNA_BY_KOMZ</div>
                     <ul className="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium ">
-                        <a href=""><li className="text-pink-600 cursor-pointer ">Home</li></a>
-                        <a className='scroll-smooth' href="#categories"><li className="hover:text-pink-600 cursor-pointer">Categories</li></a>
-                        <a href="#aboutus"><li className="hover:text-pink-600 cursor-pointer">About</li></a>
-                        <a href="#galary"><li className="hover:text-pink-600 cursor-pointer">Gallery</li></a>
-                        <a href="#whyus"><li className="hover:text-pink-600 cursor-pointer">Why us</li></a>
-                        <a href="#contact"><li className="hover:text-pink-600 cursor-pointer">Contact </li></a>
+                        <a href=""><li className="group relative text-pink-600 cursor-pointer ">Home <span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
+                        <a className='scroll-smooth' href="#categories"><li  className="group relative hover:text-pink-600 cursor-pointer ">Categories<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
+                        <a href="#aboutus"><li className="group relative cursor-pointer hover:text-pink-600 transition-colors">About<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 origin-left transform scale-x-0 transition-transform   duration-300 group-hover:scale-x-100'></span></li></a>
+                        <a href="#galary"><li className="group relative hover:text-pink-600 cursor-pointer ">Gallery<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
+                        <a href="#whyus"><li className="group relative hover:text-pink-600 cursor-pointer ">Why us<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
+                        <a href="#contact"><li className="group relative hover:text-pink-600 cursor-pointer ">Contact<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span> </li></a>
                     </ul>
                 </nav>
             </header>
@@ -470,11 +470,11 @@ const MehndiLandingPage = () => {
                     </div>
                     <div>
                         <h2 className='font-bold mb-2'>CONNECT</h2>
-                        <div className='w-40 h-40 flex flex-row gap-3'>
-                            <a href=""><img src={facebook} alt="" /></a>
-                            <a href="https://www.instagram.com/henna_by_komz/"><img src={insta} alt="" /></a>
-                            <a href=""><img src={linkdln} alt="" /></a>
-                            <a href=""><img src={twitter} alt="" /></a>
+                        <div className='w-40 h-40 flex flex-row gap-3  '>
+                            <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={facebook} alt="" /></a>
+                            <a className='transition-transform duration-200 hover:-translate-y-1  ' href="https://www.instagram.com/henna_by_komz/"><img src={insta} alt="" /></a>
+                            <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={linkdln} alt="" /></a>
+                            <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={twitter} alt="" /></a>
                         </div>
                     </div>
                 </div>
