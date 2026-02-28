@@ -99,7 +99,7 @@ const MehndiLandingPage = () => {
             </header>
 
             {/* 2. HERO SECTION */}
-            <section className="relative md:h-175 h-[60vh] md:w-full w-full ">
+            <section className="relative md:h-175 h-[60vh]  w-full ">
                 {/* Background Image with Pink Overlay */}
                 <div className="absolute inset-0">
                     <img
