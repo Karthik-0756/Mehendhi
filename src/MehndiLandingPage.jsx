@@ -164,7 +164,7 @@ const MehndiLandingPage = () => {
 
                     {/* Card 2 */}
                     <div className=" space-y-4 group ">
-                        <div className="md:h-64 h-45 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXNLT4TScR6L_4hFF3nMUyLGU0y0LtWpVrw&s"
                                 alt="Dhamal Mehndi"
@@ -180,7 +180,7 @@ const MehndiLandingPage = () => {
 
                     {/* Card 3 */}
                     <div className="space-y-4 group">
-                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvSVUuLUO_y-cW2EYMDMkrL9kATlImzKCIQ&s"
                                 alt="Bridal Mehndi"
@@ -196,7 +196,7 @@ const MehndiLandingPage = () => {
 
                     {/* Card 4 */}
                     <div className="space-y-4 group">
-                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://i.ytimg.com/vi/KR-Obe_YcHI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCTcX7GYzk-UICD8apV2zRqhzzKIA"
                                 alt="Tattoo Mehndi"
@@ -210,7 +210,7 @@ const MehndiLandingPage = () => {
                         </button> */}
                     </div>
                     <div className="space-y-4 group">
-                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolHeTBsUcnzmspD4GOBsei4LMka2KdO9JgA&s"
                                 alt="Tattoo Mehndi"
