@@ -102,7 +102,7 @@ const Gallery = () => {
                     </div>
                 </section>
                 {/* Gallery */}
-                <section className='ml-30 mr-30'>
+                <section className='md:ml-30 md:mr-30 ml-4 mr-4'>
                     <h1 className='mt-10 font-black text-center text-4xl my-20 underline'>Galleries</h1>
                     <div className='mt-10 grid grid-cols-1  md:grid-cols-3  gap-4'>
                         {images.map((img, index) => (
@@ -110,7 +110,7 @@ const Gallery = () => {
                                 key={index}
                                 src={img}
 
-                                className='w-100 mb-10 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl'
+                                className='md:w-100 mb-10 md:h-80 w-full h-64 md:mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl object-cover'
                             />
 
                         ))}
