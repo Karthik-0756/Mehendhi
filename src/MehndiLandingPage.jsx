@@ -28,7 +28,7 @@ import { img1, img2, img3, img4, img5, img6 } from './CategoryImages'
 
 const MehndiLandingPage = () => {
 
-
+    
     const [form, setForm] = useState(
         {
             Name: '',
@@ -48,15 +48,21 @@ const MehndiLandingPage = () => {
         console.log(value)
     }
     const WhatsApp = () => {
-        const phoneNumber = "916374276273";
-        const text = `
-    Name:${form.Name},
-    Number:${form.Number},
-    Mail:${form.Mail},
-    Msg:${form.Msg}
+        const {Name,Number,Mail,Msg}=form;
+        if(Name && Number && Mail && Msg){
+            const phoneNumber = "916374276273";
+             const text = `
+            Name:${form.Name},
+            Number:${form.Number},
+            Mail:${form.Mail},
+            Msg:${form.Msg}
     `
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-        window.open(url, "_blank")
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+            alert("Thanks for consulting us!!!");
+            window.open(url, "_blank")
+             
+        }
+       
     }
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -68,7 +74,7 @@ const MehndiLandingPage = () => {
         <div className="bg-white text-gray-800 font-serif ">
             {/* 1. TOP NAVBAR */}
             <header className="border-b border-gray-100">
-                <div className="bg-pink-50 py-2 text-xs flex justify-between px-6 lg:px-20 text-gray-600">
+                <div className="bg-pink-50 py-2 text-xs flex justify-between md:px-6 px-2 lg:px-20 text-gray-600">
                     <div className="flex gap-4">
                         <span className="flex items-center gap-1"><Phone size={12} /> +91 82488 97608</span>
                         <span className="flex items-center gap-1"><Mail size={12} /> henna_by_komz@mehndidesign.com</span>
@@ -79,8 +85,8 @@ const MehndiLandingPage = () => {
                         <a href=""><img src={twitter1} alt="" /></a>
                     </div>
                 </div>
-                <nav className="flex justify-between items-center py-4 px-6 lg:px-20 bg-white ">
-                    <div className="text-2xl font-bold text-pink-600 tracking-widest">HENNA_BY_KOMZ</div>
+                <nav className="flex justify-between items-center md:py-4 py-2 px-6 lg:px-20 bg-white ">
+                    <div className="md:text-2xl  font-bold text-pink-600 tracking-widest">HENNA_BY_KOMZ</div>
                     <ul className="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium ">
                         <a href=""><li className="text-pink-600 cursor-pointer ">Home</li></a>
                         <a className='scroll-smooth' href="#categories"><li className="hover:text-pink-600 cursor-pointer">Categories</li></a>
@@ -93,7 +99,7 @@ const MehndiLandingPage = () => {
             </header>
 
             {/* 2. HERO SECTION */}
-            <section className="relative h-175 w-full">
+            <section className="relative md:h-175 h-100 md:w-full w-120">
                 {/* Background Image with Pink Overlay */}
                 <div className="absolute inset-0">
                     <img
@@ -102,7 +108,7 @@ const MehndiLandingPage = () => {
                         className="w-full h-full object-cover"
                     />
                     {/* Pink overlay */}
-                    <div className="absolute inset-0 bg-pink-300 opacity-40"></div>
+                    <div className="absolute inset-0 bg-pink-300 md:opacity-40 opacity-50"></div>
                 </div>
 
                 {/* Content Wrapper */}
@@ -142,7 +148,7 @@ const MehndiLandingPage = () => {
 
                     {/* Card 1 */}
                     <div className="space-y-4 group">
-                        <div className="h-64 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCw4ylLIFHPv3EOSRhFpuoth2IRZq2zAVcw&s"
                                 alt="Henna Body Art"
@@ -157,8 +163,8 @@ const MehndiLandingPage = () => {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="space-y-4 group">
-                        <div className="h-64 overflow-hidden rounded-full shadow-lg">
+                    <div className=" space-y-4 group ">
+                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXNLT4TScR6L_4hFF3nMUyLGU0y0LtWpVrw&s"
                                 alt="Dhamal Mehndi"
@@ -174,7 +180,7 @@ const MehndiLandingPage = () => {
 
                     {/* Card 3 */}
                     <div className="space-y-4 group">
-                        <div className="h-64 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvSVUuLUO_y-cW2EYMDMkrL9kATlImzKCIQ&s"
                                 alt="Bridal Mehndi"
@@ -190,7 +196,7 @@ const MehndiLandingPage = () => {
 
                     {/* Card 4 */}
                     <div className="space-y-4 group">
-                        <div className="h-64 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://i.ytimg.com/vi/KR-Obe_YcHI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCTcX7GYzk-UICD8apV2zRqhzzKIA"
                                 alt="Tattoo Mehndi"
@@ -204,7 +210,7 @@ const MehndiLandingPage = () => {
                         </button> */}
                     </div>
                     <div className="space-y-4 group">
-                        <div className="h-64 overflow-hidden rounded-full shadow-lg">
+                        <div className="md:h-64 h-50 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolHeTBsUcnzmspD4GOBsei4LMka2KdO9JgA&s"
                                 alt="Tattoo Mehndi"
@@ -232,8 +238,8 @@ const MehndiLandingPage = () => {
                         Our focus is on precision, hygiene, and customer satisfaction.
                     </p>
                 </div>
-                <div className="rounded-3xl overflow-hidden shadow-2xl">
-                    <img className='w-200 h-120' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5E5ly7ILwDPLX5UCxS4dd6n6-090JXqOc1w&s    " alt="Artist working" />
+                <div className="rounded-3xl overflow-hidden shadow-xl">
+                    <img className='w-200 h-120 ' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5E5ly7ILwDPLX5UCxS4dd6n6-090JXqOc1w&s    " alt="Artist working" />
                 </div>
             </section>
 
@@ -253,7 +259,7 @@ const MehndiLandingPage = () => {
                     <img className='w-100 h-80 mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl ' src={img6} alt="" />
                 </div>
 
-                <button onClick={() => navigate("/gallery")} className='w-50 mt-5 h-15 rounded-2xl border border-pink-300 bg-white text-red-400  items-center hover:text-white hover:bg-red-400'>Load more...</button>
+                <button onClick={() => navigate("/gallery")} className='w-50 mt-5 h-15 rounded-2xl border  border-pink-300 bg-white text-red-400  items-center hover:text-white transition-colors duration-500  hover:bg-red-400'>Load more...</button>
             </section>
 
             {/* why us */}
@@ -311,7 +317,7 @@ const MehndiLandingPage = () => {
                                 </div>
                                 <p className="text-gray-600 leading-relaxed">
                                     We have artists with expertise in many types of mehendi
-                                    patterns, most popular ones being the Arabic and Rajasthani
+                                    patterns, most popular ones being the Arabic and palm
                                     designs.
                                 </p>
                             </div>
@@ -415,6 +421,9 @@ const MehndiLandingPage = () => {
                     </div>
                 </div>
             </section>
+
+
+            {/* form control    */}
             <section className="py-20 px-6 lg:px-20">
 
 
@@ -422,7 +431,7 @@ const MehndiLandingPage = () => {
                     <div className="space-y-8">
                         <div className="flex items-center gap-4">
                             <div className="bg-pink-100 p-3 rounded-full text-pink-600"><MapPin size={24} /></div>
-                            <div><h4 className="font-bold text-pink-600 uppercase text-xs">Address</h4><p>123 Mehndi Lane, Art District, Mumbai</p></div>
+                            <div><h4 className="font-bold  text-pink-600 uppercase text-xs">Address</h4><p className='w-100'>NO:27/44 THIRUVALLUVAR STREET, NEHRU NAGAR, VELACHERY, CHENNAI-600042</p></div>
                         </div>
                         <div className="flex items-center gap-4">
                             <div className="bg-pink-100 p-3 rounded-full text-pink-600"><Phone size={24} /></div>
@@ -431,19 +440,19 @@ const MehndiLandingPage = () => {
                     </div>
                     <form className="space-y-4">
                         <div className="grid grid-cols-2 gap-4">
-                            <input name='Name' onChange={handlechange} placeholder="Full Name" className="w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
-                            <input name='Number' onChange={handlechange} placeholder="Phone number" className="w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
-                            <input name='Mail' onChange={handlechange} placeholder="Email Address" className="w-160 p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                            <input name='Name' required onChange={handlechange} placeholder="Full Name" className="md:w-full w-50 p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                            <input name='Number' required onChange={handlechange} placeholder="Phone number" className="md:w-full w-50 p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                            <input name='Mail' required onChange={handlechange} placeholder="Email Address" className="md:w-160 w-110 p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
                         </div>
-                        <textarea placeholder="Your Message" name='Msg' onChange={handlechange} rows="4" className="w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400"></textarea>
-                        <button onClick={WhatsApp} className="w-full bg-pink-500 text-white py-3 rounded-lg font-bold hover:bg-pink-600">Send Message</button>
+                        <textarea required placeholder="Your Message" name='Msg' onChange={handlechange} rows="4" className="md:w-full w-110 p-3 border border-gray-200 rounded-lg focus:outline-pink-400"></textarea>
+                        <button onClick={WhatsApp} className="md:w-full w-40 bg-pink-500 text-white py-3 rounded-lg font-bold transition-colors duration-500 hover:bg-pink-600">Send Message</button>
                     </form>
                 </div>
             </section>
-
+               {/* footer info */}
             <section className="bg-gray-100 py-10  ">
-                <div className='mx-40 flex justify-between'>
-                    <div className='w-80 text-start items-center '>
+                <div className='md:mx-40 mx-2  flex justify-between '>
+                    <div className='md:w-80 w-40 text-start items-center '>
                         <h2 className='font-bold mb-2 '>CONTACT</h2>
                         <p className='mb-2'>NO:27/44 THIRUVALLUVAR STREET NEHRU NAGAR VELACHERY CHENNAI-600042</p>
                         <p className='mb-2'>+91 82488 97608</p>
@@ -473,7 +482,7 @@ const MehndiLandingPage = () => {
 
             </section>
             {/* FOOTER */}
-            <footer className="bg-gray-200 py-10 text-center text-sm text-gray-500">
+            <footer className="bg-gray-200 md:py-10 py-2 text-center text-sm text-gray-500">
 
                 <p>© 2026 Henna_By_Komz. All Rights Reserved.</p>
             </footer>
