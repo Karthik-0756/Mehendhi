@@ -251,12 +251,12 @@ const MehndiLandingPage = () => {
                 <h2 className="text-3xl font-bold mb-10">Gallery</h2>
                 <div className="grid grid-cols-2  md:grid-cols-3  gap-4">
 
-                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl' src={img1} alt="" />
-                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img2} alt="" />
-                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl' src={img3} alt="" />
-                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img4} alt="" />
-                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img5} alt="" />
-                    <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img6} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-54 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl' src={img1} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-54 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img2} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-54 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl' src={img3} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-54 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img4} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-54 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img5} alt="" />
+                    <img className='md:w-100 mb-10 md:h-80 w-full h-54 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img6} alt="" />
                 </div>
 
                 <button onClick={() => navigate("/gallery")} className='w-50 mt-5 h-15 rounded-2xl border  border-pink-300 bg-white text-red-400  items-center hover:text-white transition-colors duration-500  hover:bg-red-400'>Load more...</button>
