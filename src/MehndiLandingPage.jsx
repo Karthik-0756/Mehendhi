@@ -249,7 +249,7 @@ const MehndiLandingPage = () => {
             {/* Galary */}
             <section id='galary' className="pt-20 px-6 lg:px-20 text-center">
                 <h2 className="text-3xl font-bold mb-10">Gallery</h2>
-                <div className="grid grid-cols-1  md:grid-cols-3  gap-4">
+                <div className="grid grid-cols-2  md:grid-cols-3  gap-4">
 
                     <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl' src={img1} alt="" />
                     <img className='md:w-100 mb-10 md:h-80 w-full h-64 mr-0 md:mr-9 rounded-4xl border-4 object-cover border-pink-400 hover:shadow-2xl ' src={img2} alt="" />
