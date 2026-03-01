@@ -34,7 +34,9 @@ const MehndiLandingPage = () => {
             Name: '',
             Number: '',
             Mail: '',
-            Msg: ''
+            Msg: '',
+            Date:'',
+            Location:''
 
         }
     );
@@ -52,10 +54,12 @@ const MehndiLandingPage = () => {
         if (Name && Number && Mail && Msg) {
             const phoneNumber = "918248897608";
             const text = `
-            Name:${form.Name},
-            Number:${form.Number},
-            Mail:${form.Mail},
-            Msg:${form.Msg}
+            Name : ${form.Name},
+            Number : ${form.Number},
+            Date : ${form.Date},
+            Location : ${form.Location}
+            Mail : ${form.Mail},
+            Message : ${form.Msg}
     `
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
             alert("Thanks for consulting us!!!");
@@ -147,7 +151,7 @@ const MehndiLandingPage = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-8 cursor-pointer">
 
                     {/* Card 1 */}
-                    <div  className="space-y-4 group" onClick={()=>navigate('/palmPage')}>
+                    <div className="space-y-4 group" onClick={() => navigate('/palmPage')}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCw4ylLIFHPv3EOSRhFpuoth2IRZq2zAVcw&s"
@@ -163,7 +167,7 @@ const MehndiLandingPage = () => {
                     </div>
 
                     {/* Card 2 */}
-                    <div className=" space-y-4 group " onClick={()=>{navigate("/arabicPage")}}>
+                    <div className=" space-y-4 group " onClick={() => { navigate("/arabicPage") }}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXNLT4TScR6L_4hFF3nMUyLGU0y0LtWpVrw&s"
@@ -179,7 +183,7 @@ const MehndiLandingPage = () => {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="space-y-4 group" onClick={()=>{navigate("/flowerPage")}}>
+                    <div className="space-y-4 group" onClick={() => { navigate("/flowerPage") }}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvSVUuLUO_y-cW2EYMDMkrL9kATlImzKCIQ&s"
@@ -195,7 +199,7 @@ const MehndiLandingPage = () => {
                     </div>
 
                     {/* Card 4 */}
-                    <div className="space-y-4 group" onClick={()=>{navigate("/tattosPage")}}>
+                    <div className="space-y-4 group" onClick={() => { navigate("/tattosPage") }}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://i.ytimg.com/vi/KR-Obe_YcHI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCTcX7GYzk-UICD8apV2zRqhzzKIA"
@@ -209,7 +213,7 @@ const MehndiLandingPage = () => {
                             Read More
                         </button> */}
                     </div>
-                    <div className="space-y-4 group" onClick={()=>{navigate("/mandalaPage")}}>
+                    <div className="space-y-4 group" onClick={() => { navigate("/mandalaPage") }}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolHeTBsUcnzmspD4GOBsei4LMka2KdO9JgA&s"
@@ -353,8 +357,8 @@ const MehndiLandingPage = () => {
           ))}
         </div>
       </section> */}
-     
-         
+
+
 
             {/* 7. CONTACT US */}
             <section id='contact' className="py-10 bg-white items-center">
@@ -448,9 +452,12 @@ const MehndiLandingPage = () => {
                     <form className="space-y-4">
                         <div className="grid grid-cols-2 gap-4">
                             <input name='Name' required onChange={handlechange} placeholder="Full Name" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
-                            <input name='Number' required onChange={handlechange} placeholder="Phone number" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
-                            <input name='Mail' required onChange={handlechange} placeholder="Email Address" className="md:w-160 w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                            <input name='Number' type='number' required onChange={handlechange} placeholder="Phone number" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                             <input name='Date' type='date' required onChange={handlechange} placeholder="date" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                            <input name='Location' required  onChange={handlechange} placeholder="Location" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
+                           
                         </div>
+                         <input name='Mail' required onChange={handlechange} placeholder="Email Address" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400" />
                         <textarea required placeholder="Your Message" name='Msg' onChange={handlechange} rows="4" className="md:w-full w-full p-3 border border-gray-200 rounded-lg focus:outline-pink-400"></textarea>
                         <button onClick={WhatsApp} className="md:w-full w-full bg-pink-500 text-white py-3 rounded-lg font-bold transition-colors duration-500 hover:bg-pink-600">Send Message</button>
                     </form>
