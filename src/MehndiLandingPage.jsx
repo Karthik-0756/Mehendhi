@@ -50,7 +50,7 @@ const MehndiLandingPage = () => {
     const WhatsApp = () => {
         const { Name, Number, Mail, Msg } = form;
         if (Name && Number && Mail && Msg) {
-            const phoneNumber = "916374276273";
+            const phoneNumber = "918248897608";
             const text = `
             Name:${form.Name},
             Number:${form.Number},
