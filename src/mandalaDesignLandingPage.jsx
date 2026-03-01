@@ -101,7 +101,7 @@ const MandalaDesignLandingPage = () => {
             </section>
             {/* Mandala designs */}
             <section className='md:ml-30 md:mr-30 ml-4 mr-4'>
-                <h1 className='mt-10 font-black text-center text-4xl my-20 underline'>Welcome to Mandala Designs!</h1>
+                <h1 className='mt-10 font-black text-center text-4xl my-20 underline'> Mandala Designs!!!</h1>
                 <div className='mt-10 grid grid-cols-2  md:grid-cols-3  gap-4'>
                     {images.map((img, index) => (
                         <img
