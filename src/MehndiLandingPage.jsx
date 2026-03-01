@@ -28,7 +28,7 @@ import { img1, img2, img3, img4, img5, img6 } from './CategoryImages'
 
 const MehndiLandingPage = () => {
 
-    
+
     const [form, setForm] = useState(
         {
             Name: '',
@@ -48,10 +48,10 @@ const MehndiLandingPage = () => {
         console.log(value)
     }
     const WhatsApp = () => {
-        const {Name,Number,Mail,Msg}=form;
-        if(Name && Number && Mail && Msg){
+        const { Name, Number, Mail, Msg } = form;
+        if (Name && Number && Mail && Msg) {
             const phoneNumber = "916374276273";
-             const text = `
+            const text = `
             Name:${form.Name},
             Number:${form.Number},
             Mail:${form.Mail},
@@ -60,9 +60,9 @@ const MehndiLandingPage = () => {
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
             alert("Thanks for consulting us!!!");
             window.open(url, "_blank")
-             
+
         }
-       
+
     }
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -81,15 +81,15 @@ const MehndiLandingPage = () => {
                     </div>
                     <div className="flex w-25  gap-3 flex-row">
                         <a className='transition-transform duration-200 hover:-translate-y-1' href="https://www.instagram.com/henna_by_komz/"><img src={insta1} alt="" /></a>
-                        <a className='transition-transform duration-200 hover:-translate-y-1'href=""><img src={facebook1} alt="" /></a>
-                        <a className='transition-transform duration-200 hover:-translate-y-1'href=""><img src={twitter1} alt="" /></a>
+                        <a className='transition-transform duration-200 hover:-translate-y-1' href=""><img src={facebook1} alt="" /></a>
+                        <a className='transition-transform duration-200 hover:-translate-y-1' href=""><img src={twitter1} alt="" /></a>
                     </div>
                 </div>
                 <nav className="flex justify-between items-center md:py-4 py-2 px-6 lg:px-20 bg-white ">
                     <div className="md:text-2xl  font-bold text-pink-600 tracking-widest">HENNA_BY_KOMZ</div>
                     <ul className="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium ">
                         <a href=""><li className="group relative text-pink-600 cursor-pointer ">Home <span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
-                        <a className='scroll-smooth' href="#categories"><li  className="group relative hover:text-pink-600 cursor-pointer ">Categories<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
+                        <a className='scroll-smooth' href="#categories"><li className="group relative hover:text-pink-600 cursor-pointer ">Categories<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
                         <a href="#aboutus"><li className="group relative cursor-pointer hover:text-pink-600 transition-colors">About<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 origin-left transform scale-x-0 transition-transform   duration-300 group-hover:scale-x-100'></span></li></a>
                         <a href="#galary"><li className="group relative hover:text-pink-600 cursor-pointer ">Gallery<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
                         <a href="#whyus"><li className="group relative hover:text-pink-600 cursor-pointer ">Why us<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
@@ -144,10 +144,10 @@ const MehndiLandingPage = () => {
             {/* 3. CATEGORIES */}
             <section id='categories' className="py-20 px-6 lg:px-20 text-center">
                 <h2 className="text-3xl font-bold mb-12">Popular categories</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-8">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-8 cursor-pointer">
 
                     {/* Card 1 */}
-                    <div className="space-y-4 group">
+                    <div  className="space-y-4 group" onClick={()=>navigate('/palmPage')}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCw4ylLIFHPv3EOSRhFpuoth2IRZq2zAVcw&s"
@@ -163,7 +163,7 @@ const MehndiLandingPage = () => {
                     </div>
 
                     {/* Card 2 */}
-                    <div className=" space-y-4 group ">
+                    <div className=" space-y-4 group " onClick={()=>{navigate("/arabicPage")}}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXNLT4TScR6L_4hFF3nMUyLGU0y0LtWpVrw&s"
@@ -179,7 +179,7 @@ const MehndiLandingPage = () => {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="space-y-4 group">
+                    <div className="space-y-4 group" onClick={()=>{navigate("/flowerPage")}}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvSVUuLUO_y-cW2EYMDMkrL9kATlImzKCIQ&s"
@@ -195,7 +195,7 @@ const MehndiLandingPage = () => {
                     </div>
 
                     {/* Card 4 */}
-                    <div className="space-y-4 group">
+                    <div className="space-y-4 group" onClick={()=>{navigate("/tattosPage")}}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://i.ytimg.com/vi/KR-Obe_YcHI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCTcX7GYzk-UICD8apV2zRqhzzKIA"
@@ -203,13 +203,13 @@ const MehndiLandingPage = () => {
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                             />
                         </div>
-                        <h3 className="font-bold text-lg hover:underline">Mahendhi Tattos</h3>
+                        <h3 className="font-bold text-lg hover:underline">Mahendhi Tattoo</h3>
 
                         {/* <button className="bg-pink-400 text-white px-4 py-1.5 rounded text-xs hover:bg-pink-500">
                             Read More
                         </button> */}
                     </div>
-                    <div className="space-y-4 group">
+                    <div className="space-y-4 group" onClick={()=>{navigate("/mandalaPage")}}>
                         <div className="md:h-64 h-40 overflow-hidden rounded-full shadow-lg">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQolHeTBsUcnzmspD4GOBsei4LMka2KdO9JgA&s"
@@ -263,7 +263,7 @@ const MehndiLandingPage = () => {
             </section>
 
             {/* why us */}
-            <section id='whyus' className="bg-[#fdecee] my-20 py-30">
+            <section id='whyus' className="bg-[#fdecee] my-10 py-20">
                 <div className="max-w-4xl mx-auto px-6">
 
                     {/* Heading */}
@@ -353,9 +353,11 @@ const MehndiLandingPage = () => {
           ))}
         </div>
       </section> */}
+     
+         
 
             {/* 7. CONTACT US */}
-            <section id='contact' className="py-20 bg-white items-center">
+            <section id='contact' className="py-10 bg-white items-center">
                 <div className="max-w-7xl mx-auto px-6">
 
                     {/* Heading */}
@@ -423,8 +425,10 @@ const MehndiLandingPage = () => {
             </section>
 
 
+
+
             {/* form control    */}
-            <section className="py-20 px-6 lg:px-20">
+            <section className="py-20 px-6 lg:px-20 ">
 
 
                 <div className="grid md:grid-cols-2 gap-20">
@@ -452,7 +456,30 @@ const MehndiLandingPage = () => {
                     </form>
                 </div>
             </section>
-               {/* footer info */}
+
+            {/* archivement */}
+            {/* <section className=''>
+                <div className='flex mx-30 justify-between md:mb-10'>
+                    <div className=' md:mb-8 border-gray-300 p-3 flex flex-col md:p-5 shadow-xl rounded-xl '>
+                        <h1 className='text-xl font-bold text-center'>TOP MEHNDI DESINGS</h1>
+                        <p className='font-light text-gray-500 text-center'>Custom desings for you!</p>
+                    </div>
+                    <div className='md:mb-8 border-gray-300 p-3 flex flex-col md:p-5 shadow-xl rounded-xl '>
+                        <h1 className='text-xl font-bold text-center'>SUPPORT 24/7</h1>
+                        <p className='font-light text-gray-500 text-center'>We support 24 hours a day</p>
+                    </div>
+                    <div className=' md:mb-8 border-gray-300 p-3 flex flex-col md:p-5 shadow-xl rounded-xl '>
+                        <h1 className='text-xl font-bold text-center'>SATISFACTION FIRST</h1>
+                        <p className='font-light text-gray-500 text-center'>Quality service or refund</p>
+                    </div>
+                    <div className=' md:mb-8 border-gray-300 p-3 flex flex-col md:p-5 shadow-xl rounded-xl '>
+                        <h1 className='text-xl font-bold text-center'>FOLLOW US NOW</h1>
+                        <p className='font-light text-gray-500 text-center'>Trends and offers await!</p>
+                    </div>
+                </div>
+            </section> */}
+
+            {/* footer info */}
             <section className="bg-gray-100 py-10  ">
                 <div className="md:mx-40 mx-2 flex flex-col md:flex-row justify-between gap-6 md:gap-0">
                     <div className='md:w-80 w-40 text-start items-center '>
@@ -471,12 +498,13 @@ const MehndiLandingPage = () => {
 
 
                     </div>
+
                     <div>
                         <h2 className='font-bold mb-2'>CONNECT</h2>
-                        <div className='md:w-40 md:h-40 w-40 h-10 flex flex-row gap-3  '>
+                        <div className='md:w-30 md:h-30 w-40 h-10 flex flex-row gap-3  '>
                             <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={facebook} alt="" /></a>
                             <a className='transition-transform duration-200 hover:-translate-y-1  ' href="https://www.instagram.com/henna_by_komz/"><img src={insta} alt="" /></a>
-                            <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={linkdln} alt="" /></a>
+                            {/* <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={linkdln} alt="" /></a> */}
                             <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={twitter} alt="" /></a>
                         </div>
                     </div>
@@ -484,6 +512,7 @@ const MehndiLandingPage = () => {
 
 
             </section>
+
             {/* FOOTER */}
             <footer className="bg-gray-200 md:py-10 py-2 text-center text-sm text-gray-500">
 

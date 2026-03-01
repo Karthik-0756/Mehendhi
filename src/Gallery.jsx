@@ -49,14 +49,15 @@ const Gallery = () => {
                     </div>
                     <nav className="flex justify-between items-center md:py-4 py-2 px-6 lg:px-20 bg-white ">
                         <div className="md:text-2xl  font-bold text-pink-600 tracking-widest">HENNA_BY_KOMZ</div>
-                        <ul className="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium ">
+                        {/* <ul className="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium ">
                             <a href=""><li className="group relative text-pink-600 cursor-pointer ">Home <span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
                             <a className='scroll-smooth' href="#categories"><li className="group relative hover:text-pink-600 cursor-pointer ">Categories<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
                             <a href="#aboutus"><li className="group relative cursor-pointer hover:text-pink-600 transition-colors">About<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 origin-left transform scale-x-0 transition-transform   duration-300 group-hover:scale-x-100'></span></li></a>
                             <a href="#galary"><li className="group relative hover:text-pink-600 cursor-pointer ">Gallery<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
                             <a href="#whyus"><li className="group relative hover:text-pink-600 cursor-pointer ">Why us<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span></li></a>
                             <a href="#contact"><li className="group relative hover:text-pink-600 cursor-pointer ">Contact<span className='absolute bottom-0 left-0 h-0.5 w-full bg-pink-600 scale-x-0 transition-transform transform duration-300 origin-left group-hover:scale-x-100'></span> </li></a>
-                        </ul>
+                        </ul> */}
+                        {/* <button className="bg-pink-500 text-white px-8 py-3 rounded-3xl hover:bg-pink-600 transition">Back to HomePage</button> */}
                     </nav>
                 </header>
                 {/* 2. HERO SECTION */}
@@ -104,13 +105,13 @@ const Gallery = () => {
                 {/* Gallery */}
                 <section className='md:ml-30 md:mr-30 ml-4 mr-4'>
                     <h1 className='mt-10 font-black text-center text-4xl my-20 underline'>Galleries</h1>
-                    <div className='mt-10 grid grid-cols-1  md:grid-cols-3  gap-4'>
+                    <div className='mt-10 grid grid-cols-2  md:grid-cols-3  gap-4'>
                         {images.map((img, index) => (
                             <img
                                 key={index}
                                 src={img}
 
-                                className='md:w-100 mb-10 md:h-80 w-full h-64 md:mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl object-cover'
+                                className='md:w-100 mb-10 md:h-80 w-full h-54 md:mr-9 rounded-4xl border-4 border-pink-400 hover:shadow-2xl object-cover'
                             />
 
                         ))}
@@ -118,6 +119,8 @@ const Gallery = () => {
                     </div>
 
                 </section>
+                {/* archievement */}
+                
                 <section className="bg-gray-100 py-10  ">
                     <div className="md:mx-40 mx-2 flex flex-col md:flex-row justify-between gap-6 md:gap-0">
                         <div className='md:w-80 w-40 text-start items-center '>
@@ -138,10 +141,10 @@ const Gallery = () => {
                         </div>
                         <div>
                             <h2 className='font-bold mb-2'>CONNECT</h2>
-                            <div className='md:w-40 md:h-40 w-40 h-10 flex flex-row gap-3  '>
+                            <div className='md:w-30 md:h-30 w-40 h-10 flex flex-row gap-3  '>
                                 <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={facebook} alt="" /></a>
                                 <a className='transition-transform duration-200 hover:-translate-y-1  ' href="https://www.instagram.com/henna_by_komz/"><img src={insta} alt="" /></a>
-                                <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={linkdln} alt="" /></a>
+                                {/* <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={linkdln} alt="" /></a> */}
                                 <a className='transition-transform duration-200 hover:-translate-y-1  ' href=""><img src={twitter} alt="" /></a>
                             </div>
                         </div>
