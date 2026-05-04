@@ -379,7 +379,7 @@ const MehndiLandingPage = () => {
                                 <img className='w-10 h-10' src={location} alt="" />
                             </div>
                             <p className="text-gray-600 leading-relaxed text-sm">
-                                NO:27/44 THIRUVALLUVAR STREET NEHRU NAGAR VELACHERY CHENNAI-600042
+                                 NEHRU NAGAR VELACHERY CHENNAI-600042
                             </p>
                         </div>
 
@@ -491,7 +491,7 @@ const MehndiLandingPage = () => {
                 <div className="md:mx-40 mx-2 flex flex-col md:flex-row justify-between gap-6 md:gap-0">
                     <div className='md:w-80 w-40 text-start items-center '>
                         <h2 className='font-bold mb-2 '>CONTACT</h2>
-                        <p className='mb-2'>NO:27/44 THIRUVALLUVAR STREET NEHRU NAGAR VELACHERY CHENNAI-600042</p>
+                        {/* <p className='mb-2'>NO:27/44 THIRUVALLUVAR STREET NEHRU NAGAR VELACHERY CHENNAI-600042</p> */}
                         <p className='mb-2'>+91 82488 97608</p>
                         <p>henna_by_komz@mehndidesign.com</p>
                     </div>
